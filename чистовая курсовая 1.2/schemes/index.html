@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>schemes</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="panel">
+        <a href="../index.html" class="home">Главная страница</a>
+        <a href="index.html" class="schemes">Схемы</a>
+        <a href="../guides/index.html" class="guides">Гайды</a>
+    </div>
+
+    <div class="forms-container">
+        <div>
+            <h2>Добавить свой чертёж</h2>
+            <form id="imageForm">
+                <label for="imageUrl">Скриншот чертежа (URL):</label><br>
+                <input type="text" id="imageUrl" name="imageUrl"><br>
+                <label for="imageDescription">Описание чертежа:</label><br>
+                <input type="text" id="imageDescription" name="imageDescription"><br>
+                <label for="imageFilter">Фильтр:</label><br>
+                <select id="imageFilter" name="imageFilter">
+                    <option value="Vanilla">Ванильная</option>
+                    <option value="SA">SA</option>
+                    <option value="SE">SE</option>
+                    <option value="K2">K2</option>
+                    <option value="Other">Прочее</option>
+                </select><br>
+                <button type="submit">Добавить</button>
+            </form>
+        </div>
+
+        <div>
+            <h2>Поиск по фильтрам</h2>
+            <form>
+                <label for="filterSearch">Выберите фильтр:</label><br>
+                <select id="filterSearch" name="filterSearch">
+                    <option value="All">Все</option>
+                    <option value="Vanilla">Ванильная</option>
+                    <option value="SA">SA</option>
+                    <option value="SE">SE</option>
+                    <option value="K2">K2</option>
+                    <option value="Other">Прочее</option>
+                </select><br>
+                <button type="button" onclick="filterImages()">Поиск</button>
+            </form>
+        </div>
+    </div>
+
+    <div id="gallery"></div>
+
+    <div class="back-panel">
+        <p>Последнее изменение этой страницы: 15.12.2024, 23:03</p>
+        <p><a href="#" class="schemes">Политика конфиденциальности</a></p>
+        <p><a href="#" class="guides">Отказ от ответственности</a></p>
+        <p>Почта - mayweld.team@gmail.com</p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
